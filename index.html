@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="DevForest 2026 – DevFest Basilicata Outdoor Edition. Una giornata all'aria aperta con Build Sprint, RoundTable Fishbowl, AI Mood Sprint e Campfire Talk per costruire insieme una micro-serra smart IoT. Organizzato da GDG Basilicata."
+    />
+    <meta name="keywords" content="DevFest Basilicata 2026, DevForest, GDG Basilicata, Google Developer Groups, outdoor, IoT, AI, cloud, hackathon, workshop, Build Sprint, community tech, Basilicata" />
+    <meta name="author" content="GDG Basilicata" />
+    <meta name="robots" content="index, follow" />
+
+    <title>DevForest 2026 – DevFest Basilicata Outdoor Edition | GDG Basilicata</title>
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="DevForest 2026 – DevFest Basilicata Outdoor Edition" />
+    <meta property="og:description" content="Meno conferenza, più esperienza. Una giornata nel bosco con Build Sprint, RoundTable Fishbowl, AI Mood Sprint e Campfire Talk. Costruiamo insieme una micro-serra smart IoT. Organizzato da GDG Basilicata." />
+    <meta property="og:image" content="assets/hero-reference.png" />
+    <meta property="og:locale" content="it_IT" />
+    <meta property="og:site_name" content="DevForest 2026 – GDG Basilicata" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="DevForest 2026 – DevFest Basilicata Outdoor Edition" />
+    <meta name="twitter:description" content="Meno conferenza, più esperienza. Build Sprint, RoundTable Fishbowl, AI Mood Sprint e Campfire Talk nel bosco. GDG Basilicata." />
+    <meta name="twitter:image" content="assets/hero-reference.png" />
+
+    <!-- JSON-LD: Event structured data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Event",
+      "name": "DevForest 2026 – DevFest Basilicata Outdoor Edition",
+      "alternateName": "DevFest Basilicata 2026",
+      "description": "Una giornata all'aria aperta con Build Sprint modulare (micro-serra IoT), RoundTable Fishbowl, 5 talk tecnici, AI Mood Sprint e Campfire Talk finale. I partecipanti costruiscono insieme un artefatto reale: una smart planter con sensori, cloud e AI.",
+      "url": "https://gdg.community.dev/events/details/google-gdg-basilicata-presents-devfest-basilicata-2026-tech-in-the-great-outdoors-devforest-1/",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "eventStatus": "https://schema.org/EventScheduled",
+      "location": {
+        "@type": "Place",
+        "name": "La Majonica",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 40.5462367,
+          "longitude": 15.6755005
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "addressRegion": "Basilicata",
+          "addressCountry": "IT"
+        }
+      },
+      "organizer": {
+        "@type": "Organization",
+        "name": "Google Developer Group Basilicata",
+        "url": "https://gdg.community.dev/gdg-basilicata/"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "5",
+        "priceCurrency": "EUR",
+        "availability": "https://schema.org/InStock",
+        "url": "https://gdg.community.dev/events/details/google-gdg-basilicata-presents-devfest-basilicata-2026-tech-in-the-great-outdoors-devforest-1/"
+      },
+      "keywords": "DevFest, GDG, Basilicata, outdoor, IoT, AI, cloud, workshop, hackathon, community"
+    }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,600;0,9..40,700;0,9..40,800;1,9..40,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="logo" href="#top" aria-label="DevFest Basilicata 2026, torna all’inizio">
+        <svg class="logo-mark" viewBox="0 0 48 48" aria-hidden="true">
+          <defs>
+            <linearGradient id="gG" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#ea4335" />
+              <stop offset="25%" stop-color="#fbbc04" />
+              <stop offset="50%" stop-color="#34a853" />
+              <stop offset="100%" stop-color="#4285f4" />
+            </linearGradient>
+          </defs>
+          <circle cx="24" cy="24" r="20" fill="none" stroke="url(#gG)" stroke-width="3" opacity="0.9" />
+          <circle cx="24" cy="24" r="14" fill="none" stroke="rgba(255,255,255,0.35)" stroke-width="1.5" />
+          <text x="24" y="29" text-anchor="middle" font-size="16" font-weight="800" fill="url(#gG)">G</text>
+        </svg>
+        <span>DevFest Basilicata · Outdoor Edition 2026</span>
+      </a>
+
+      <button
+        type="button"
+        class="nav-toggle"
+        id="nav-toggle"
+        aria-expanded="false"
+        aria-controls="site-nav"
+      >
+        Menu
+      </button>
+
+      <nav class="nav" id="site-nav" aria-label="Principale">
+        <a href="#top" class="active">Home</a>
+        <a href="#programma">Programma</a>
+        <a href="#build">Build Sprint</a>
+        <a href="#location">Location</a>
+        <a href="#registrazione">Registrati</a>
+      </nav>
+
+      <div class="header-actions">
+        <div class="avatar" aria-hidden="true">
+          <div class="avatar-inner">GDG</div>
+        </div>
+        <a class="btn btn-primary" href="#registrazione">Registrati ora</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="top" aria-labelledby="hero-title">
+        <div class="hero-grid">
+          <div class="hero-visual">
+            <div class="hero-slider" id="hero-slider" aria-label="Anteprima DevFest">
+              <div class="hero-slides">
+                <article class="hero-slide is-active">
+                  <img class="hero-slide-media" src="assets/slide-1.png" alt="Vista panoramica della location outdoor DevFest" loading="eager" />
+                  <div class="hero-slide-overlay">
+                    <p class="slide-label">Outdoor Labs</p>
+                    <h3>Workshop immersi nel verde</h3>
+                    <p>Dalla botanica all'IoT: team misti, prototipi reali e sprint collaborativi all'aria aperta.</p>
+                  </div>
+                </article>
+                <article class="hero-slide">
+                  <img class="hero-slide-media" src="assets/slide-2.png" alt="Prato e collina della location con cielo aperto" loading="lazy" />
+                  <div class="hero-slide-overlay">
+                    <p class="slide-label">Community</p>
+                    <h3>Roundtable e campfire</h3>
+                    <p>Confronti pratici tra speaker e pubblico per trasformare idee in azioni concrete.</p>
+                  </div>
+                </article>
+                <article class="hero-slide">
+                  <img class="hero-slide-media" src="assets/slide-3.png" alt="Porticato con vista sui monti e area dell'evento" loading="lazy" />
+                  <div class="hero-slide-overlay">
+                    <p class="slide-label">Build Sprint</p>
+                    <h3>Un unico MVP condiviso</h3>
+                    <p>Ogni gruppo sviluppa un modulo e lo integra in una micro-serra smart completa.</p>
+                  </div>
+                </article>
+                <article class="hero-slide">
+                  <img class="hero-slide-media" src="assets/slide-4.png" alt="Area aperta con prato e alberi attorno alla venue" loading="lazy" />
+                  <div class="hero-slide-overlay">
+                    <p class="slide-label">Nature Tech</p>
+                    <h3>Spazi ideali per prototipare</h3>
+                    <p>Connessione tra natura e tecnologia, con sessioni pratiche in un ambiente autentico.</p>
+                  </div>
+                </article>
+                <article class="hero-slide">
+                  <img class="hero-slide-media" src="assets/slide-5.png" alt="Bosco e laghetto della location dell'evento" loading="lazy" />
+                  <div class="hero-slide-overlay">
+                    <p class="slide-label">Location</p>
+                    <h3>Scenario naturale unico</h3>
+                    <p>Un contesto che favorisce creativita, collaborazione e confronto tra community tech.</p>
+                  </div>
+                </article>
+              </div>
+              <div class="hero-slider-controls">
+                <button type="button" class="hero-slider-btn" data-slide-dir="prev" aria-label="Slide precedente">‹</button>
+                <div class="hero-slider-dots" role="tablist" aria-label="Selezione slide">
+                  <button type="button" class="hero-slider-dot is-active" data-slide-to="0" aria-label="Vai alla slide 1"></button>
+                  <button type="button" class="hero-slider-dot" data-slide-to="1" aria-label="Vai alla slide 2"></button>
+                  <button type="button" class="hero-slider-dot" data-slide-to="2" aria-label="Vai alla slide 3"></button>
+                  <button type="button" class="hero-slider-dot" data-slide-to="3" aria-label="Vai alla slide 4"></button>
+                  <button type="button" class="hero-slider-dot" data-slide-to="4" aria-label="Vai alla slide 5"></button>
+                </div>
+                <button type="button" class="hero-slider-btn" data-slide-dir="next" aria-label="Slide successiva">›</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-copy">
+            <p class="eyebrow">Google Developer Groups · Basilicata</p>
+            <p class="devforest-badge">DevForest 2026</p>
+            <h1 id="hero-title">DevFest Basilicata – Outdoor Edition</h1>
+            <p class="hero-sub">
+              Una giornata all'aria aperta dove la tecnologia torna ad essere strumento — misurata su vincoli reali, costruita da mani diverse, dimostrata insieme.
+            </p>
+            <p class="hero-tagline">DevFest in the woods:<br>meno conferenza, più esperienza.</p>
+            <div class="hero-ctas">
+              <a class="btn btn-primary" href="#registrazione">Registrati ora</a>
+              <a class="btn btn-ghost" href="#programma">Scopri il programma</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="stats-bar" aria-label="Numeri dell'evento">
+        <div class="stat">
+          <span class="stat-num">5</span>
+          <span class="stat-label">gruppi di lavoro</span>
+        </div>
+        <div class="stat-divider" aria-hidden="true"></div>
+        <div class="stat">
+          <span class="stat-num">1</span>
+          <span class="stat-label">MVP condiviso</span>
+        </div>
+        <div class="stat-divider" aria-hidden="true"></div>
+        <div class="stat">
+          <span class="stat-num">100+</span>
+          <span class="stat-label">partecipanti</span>
+        </div>
+        <div class="stat-divider" aria-hidden="true"></div>
+        <div class="stat">
+          <span class="stat-num">1</span>
+          <span class="stat-label">campfire finale</span>
+        </div>
+      </div>
+
+      <section class="section" aria-labelledby="preview-title">
+        <div class="section-head">
+          <h2 id="preview-title">Tre pilastri della giornata</h2>
+          <p>
+            Format ibrido tra track tradizionale,
+            laboratori hands-on e rituali partecipativi (fishbowl, AI Mood Sprint, campfire).
+          </p>
+        </div>
+
+        <div class="cards-row">
+          <article class="card">
+            <h3>Ospiti &amp; roundtable</h3>
+            <div class="speaker-chips">
+              <div class="speaker">
+                <div class="speaker-avatar" aria-hidden="true"></div>
+                <div>
+                  <strong>Profilo botanico / ambientalista</strong>
+                  <span>Feedback loop, sostenibilità, misura</span>
+                </div>
+              </div>
+              <div class="speaker">
+                <div class="speaker-avatar b" aria-hidden="true"></div>
+                <div>
+                  <strong>Maker / IoT engineer</strong>
+                  <span>Edge, affidabilità sul campo</span>
+                </div>
+              </div>
+              <div class="speaker">
+                <div class="speaker-avatar c" aria-hidden="true"></div>
+                <div>
+                  <strong>Cloud / Data engineer</strong>
+                  <span>Pipeline, osservabilità, sicurezza</span>
+                </div>
+              </div>
+              <div class="speaker">
+                <div class="speaker-avatar d" aria-hidden="true"></div>
+                <div>
+                  <strong>Product / Community builder</strong>
+                  <span>Collaborazione, ownership, inclusione</span>
+                </div>
+              </div>
+            </div>
+            <p style="margin-top: 1rem">
+              Mattina: <strong>RoundTable fishbowl</strong> (3–4 ospiti + una sedia libera per il pubblico) sul tema
+              «Dal bosco al cloud: costruire sistemi (e community) che reggono», con micro-storie e domande guida.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Programma</h3>
+            <div class="timeline">
+              <div class="timeline-item">
+                <time>07:30 – 08:30</time>
+                <p>Yoga per salutare la DevFest</p>
+              </div>
+              <div class="timeline-item">
+                <time>09:00 – 10:00</time>
+                <p>Registrazione partecipanti</p>
+              </div>
+              <div class="timeline-item">
+                <time>09:30 – 10:00</time>
+                <p>RoundTable fishbowl interattiva</p>
+              </div>
+              <div class="timeline-item">
+                <time>10:00 – 13:30</time>
+                <p>5 talk tematici (Web, frontend, AI, cloud) + preparazione ai laboratori</p>
+                <div class="pills">
+                  <span class="pill">Talk tecnici</span>
+                  <span class="pill red">Integration contract</span>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <time>13:30 – 14:30</time>
+                <p>Pranzo: piatti vegetariani, vegani e griglia</p>
+              </div>
+              <div class="timeline-item">
+                <time>14:30 – 16:30</time>
+                <p>Build Sprint per gruppi — moduli collegati al prototipo comune</p>
+              </div>
+              <div class="timeline-item">
+                <time>16:30 – 17:30</time>
+                <p>Integrazione «dal tutto all’UNO» + demo end-to-end</p>
+              </div>
+              <div class="timeline-item">
+                <time>17:30 – 18:30</time>
+                <p><strong>AI Mood Sprint</strong> — gioco partecipativo su percezioni AI</p>
+              </div>
+              <div class="timeline-item timeline-item--evening">
+                <time>19:30</time>
+                <p><strong>Campfire Talk</strong> — senza slide, intorno al fuoco: mentoring, retrospettiva, impegni AI</p>
+              </div>
+              <div class="timeline-item timeline-item--evening">
+                <time>20:00</time>
+                <p>Cena alla brace + musica live — chiusura festival</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <h3>Visione</h3>
+            <p>
+              DevFest Basilicata 2026 nasce per evolvere il format «solo talk» in un’<strong>esperienza
+              partecipativa</strong>: contenuti non solo ascoltati, ma costruiti insieme. La location outdoor (bosco /
+              spazio naturale) è un cambio di paradigma: più collaborazione autentica, tecnologia come strumento
+              misurata su vincoli reali (energia, connettività, ambiente), format ibridi tra talk brevi, laboratori e
+              momenti rituali come il campfire.
+            </p>
+            <p>
+              Restiamo <strong>GDG-consistenti</strong>: learning-by-doing, community-first, inclusione, responsible AI,
+              mentalità aperta su modularità e integrazione — come metafora di come crescono progetti e community.
+            </p>
+            <div class="pills">
+              <span class="pill green">Outdoor</span>
+              <span class="pill">Hands-on</span>
+              <span class="pill red">Responsible AI</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section--shift" aria-labelledby="novita-title">
+        <div class="section-head">
+          <h2 id="novita-title">Cosa rende questa DevFest diversa</h2>
+          <p>Non solo un evento tech. Un cambio di formato, di mindset e di esperienza — coerente con i valori GDG.</p>
+        </div>
+        <div class="shift-grid">
+          <div class="shift-item">
+            <span class="shift-before">Keynote monologo</span>
+            <span class="shift-arrow" aria-hidden="true">→</span>
+            <span class="shift-after">RoundTable Fishbowl con sedia sempre aperta al pubblico</span>
+          </div>
+          <div class="shift-item">
+            <span class="shift-before">Talk da ascoltare passivamente</span>
+            <span class="shift-arrow" aria-hidden="true">→</span>
+            <span class="shift-after">Mini-talk funzionali ai laboratori: contenuto strumentale, non autoreferenziale</span>
+          </div>
+          <div class="shift-item">
+            <span class="shift-before">Applausi e arrivederci</span>
+            <span class="shift-arrow" aria-hidden="true">→</span>
+            <span class="shift-after">Build Sprint + demo end-to-end di un MVP reale costruito da tutti</span>
+          </div>
+          <div class="shift-item">
+            <span class="shift-before">Networking da buffet</span>
+            <span class="shift-arrow" aria-hidden="true">→</span>
+            <span class="shift-after">Campfire Talk intorno al fuoco: mentoring, retrospettiva, impegni concreti</span>
+          </div>
+          <div class="shift-item">
+            <span class="shift-before">Sala conferenze anonima</span>
+            <span class="shift-arrow" aria-hidden="true">→</span>
+            <span class="shift-after">Bosco e natura come parte attiva del contenuto, non solo scenografia</span>
+          </div>
+          <div class="shift-item">
+            <span class="shift-before">AI come argomento da palco</span>
+            <span class="shift-arrow" aria-hidden="true">→</span>
+            <span class="shift-after">AI Mood Sprint: le tue percezioni diventano un artefatto visivo condiviso</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="programma" aria-labelledby="programma-title">
+        <div class="section-head">
+          <h2 id="programma-title">Programma dettagliato</h2>
+        </div>
+
+        <div class="detail-grid">
+          <div class="panel">
+            <h3>Mattina — track mista</h3>
+            <p class="location-note">
+              <strong>09:30 – 10:00 · RoundTable fishbowl.</strong> Tema: «Dal bosco al cloud: costruire sistemi (e
+              community) che reggono». 3–4 ospiti + una sedia sempre libera per il pubblico; micro-storie (circa 2’
+              ciascuna), domande guida, interventi dal pubblico.
+            </p>
+            <h4>10:00 – 12:30 · Cinque talk tecnici</h4>
+            <p class="location-note">
+              Formato circa 30’ + 3’ Q&amp;A. Un talk per ciascun gruppo di lavoro: concetti base, scelte tecniche,
+              rischi tipici, lettura guidata delle specifiche dell’<strong>Integration Contract</strong> (schema JSON,
+              unità di misura, frequenza, endpoint/MQTT, Definition of Done).
+            </p>
+            <h4>Sera &amp; community</h4>
+            <p class="location-note">
+              Dopo il laboratorio: <strong>Campfire Talk</strong> guidato (19:30 nel concept; 
+              marshmallow, cena alla brace, musica live e — in alternativa — pizza al forno a legna 20:00–22:00 per chi
+              resta). Sessione senza slide: mentoring, retrospettiva, domande sul costruito insieme, attriti,
+              impegno personale su AI (skill e guardrail).
+            </p>
+          </div>
+
+          <div class="panel">
+            <h3>Pomeriggio — laboratorio modulare</h3>
+            <p class="location-note">
+              <strong>14:00 – 16:30 · Build Sprint.</strong> Gruppi su stand dedicati; check-in periodici «show me
+              something» ogni 30–45’. Breve parte introduttiva con mini-talk funzionali ai lab (contenuto strumentale,
+              basi e specifiche comuni).
+            </p>
+            <h4>16:30 – 17:30 · Integrazione</h4>
+            <p class="location-note">
+              Due binari che convergono: <strong>A fisico</strong> (botanica + IoT: sensori e payload) e
+              <strong>B digitale</strong> (cloud + app: endpoint e dashboard), poi merge. <strong>17:10 – 17:30</strong>
+              demo end-to-end: 3’ per modulo, 5’ demo completa, 5’ «what we learned».
+            </p>
+            <h4>17:30 – 18:30 · AI Mood Sprint / AI Camp Check-in</h4>
+            <p class="location-note">
+              Gioco veloce: card con tre prompt (es. entusiasmo, paura concreta, skill da allenare nel 2026; opzione
+              guardrail team). Pensieri brevi (8–10 parole), token/sticker, premio a completamento; output: muro dei
+              pensieri e insight per il talk serale.
+            </p>
+          </div>
+        </div>
+
+      </section>
+
+      <section class="section" id="build" aria-labelledby="build-title">
+        <div class="section-head">
+          <h2 id="build-title">Il cuore del progetto: cosa costruiamo</h2>
+          <p>
+            Artefatto condiviso (MVP ad alta resa): <strong>smart planter / micro-serra modulare</strong> — vaso o
+            contenitore intelligente con sensori (umidità, temperatura, luce) che invia dati resi visibili e
+            interpretabili tramite app e cloud.
+          </p>
+        </div>
+
+        <div class="detail-grid">
+          <div class="panel">
+            <h3>Gruppi e deliverable</h3>
+            <div class="groups">
+              <div class="group-tag">
+                <span><strong>Botanica</strong> — piante robuste, soglie, scelta sensori, lettura «bio» dei segnali.</span>
+              </div>
+              <div class="group-tag">
+                <span
+                  ><strong>Elettronica / IoT</strong> — controller, firmware, lettura sensori, calibrazione, invio dati
+                  (MQTT/HTTP).</span
+                >
+              </div>
+              <div class="group-tag">
+                <span
+                  ><strong>Stampa 3D / Fab</strong> — contenitore, passacavi, supporti, protezioni, montaggio
+                  field-ready.</span
+                >
+              </div>
+              <div class="group-tag">
+                <span
+                  ><strong>Web / App + AI</strong> — dashboard live, storico, alert; assistant che traduce dati in
+                  consigli (prompt guidati / guardrail).</span
+                >
+              </div>
+              <div class="group-tag">
+                <span
+                  ><strong>Cloud &amp; Data</strong> — ingestion, storage time-series, API, osservabilità minima,
+                  sicurezza di base.</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="panel">
+            <h3>Integration Contract</h3>
+            <p class="location-note">
+              Per integrare sul serio, ogni modulo ha interfacce definite: schema payload, unità, nomi campi, frequenza,
+              endpoint o topic MQTT, Definition of Done. Obiettivo: evitare che «ognuno lavora bene ma non si
+              integra».
+            </p>
+            <h4>Momento clou</h4>
+            <p class="location-note">
+              Riunione finale per assemblaggio e demo: prototipo funzionante, simile a un mini-hackathon con
+              <strong>output unico</strong> condiviso da tutta la community.
+            </p>
+            <h4>Call interna (GDG friends)</h4>
+            <p class="location-note">
+              Dai una mano: in quale gruppo vorresti stare (botanica, IoT, 3D, app+AI, cloud)? Hai idee per ospiti
+              roundtable o per rendere il gioco AI ancora più coinvolgente?
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="location" aria-labelledby="location-title">
+        <div class="section-head">
+          <h2 id="location-title">Location, logistica e partecipanti</h2>
+          <p>
+            Spazio outdoor con servizi; piani meteo alternativi; target di presenza e trasporti.
+          </p>
+        </div>
+
+        <div class="detail-grid">
+          <div class="panel">
+            <h3>La Majonica — Basilicata</h3>
+            <p class="location-note">
+              La nostra sede è <strong>La Majonica</strong>, uno spazio naturale immerso nel paesaggio lucano. La location non è solo scenografia: è parte attiva del contenuto, un ambiente che favorisce collaborazione autentica e conversazioni vere.
+            </p>
+            <h4>Formato e numeri</h4>
+            <p class="location-note">
+              Target indicativo: <strong>100–120 partecipanti</strong> (oltre volontari e speaker). Non è un formato
+              da «numeri enormi», ma coerente con le aspettative degli ultimi anni e con un’esperienza curata.
+            </p>
+            <h4>Talk e copertura</h4>
+            <p class="location-note">
+              Spazio esterno coperto (es. galleria) per sessioni mattutine più tradizionali, con monitor e impianto
+              audio. Prevista <strong>location secondaria</strong> in caso di meteo avversa (attivazione con pochi
+              giorni di anticipo sulle previsioni).
+            </p>
+            <h4>Servizi in location</h4>
+            <p class="location-note">
+              Connettività, corrente per laptop, acqua potabile, gas, servizi igienici a norma — da confermare in sede
+              di scouting definitivo.
+            </p>
+          </div>
+          <div class="panel">
+            <h3>Navette e pernottamento</h3>
+            <p class="location-note">
+              <strong>Hub + navetta:</strong> parcheggio pubblico gratuito come punto di ritrovo; bus 28–35 posti per
+              coprire gli ultimi 15–20 minuti di strada, con tabella oraria da definire.
+            </p>
+            <p class="location-note">
+              <strong>Chiusura:</strong> conferenza strutturata fin verso le 19:00; attività serali facoltative con
+              navetta di ritorno verso l’hub. Convenzione albergo in valutazione (circa 1,2 km dall’hub, possibile
+              fermata navetta).
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="registrazione" aria-labelledby="reg-title">
+        <div class="location-map-box" aria-label="Mappa location evento">
+          <div class="location-map-frame">
+            <iframe
+              title="Mappa Google - La Majonica"
+              src="https://www.google.com/maps?q=La+Majonica+40.5462367,15.6755005&output=embed"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+
+        <div class="cta-band cta-band--wide" style="margin-top: 1.5rem;">
+          <h2 id="reg-title">DevFest in the woods</h2>
+          <p>
+            Prenota il tuo posto!<br />
+            Per evitare sprechi e assicurarci che ogni sedia trovi il suo ospite, chiediamo un piccolo contributo
+            simbolico di 5€ per la prenotazione del posto.<br />
+            In cambio, pensiamo a tutto noi: il pranzo e le pause caffè sono inclusi nella quota!
+          </p>
+          <a
+            class="btn btn-primary reg-cta-btn"
+            href="https://gdg.community.dev/events/details/google-gdg-basilicata-presents-devfest-basilicata-2026-tech-in-the-great-outdoors-devforest-1/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            REGISTRATI
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>
+        Contenuti editoriali derivati dai documenti «IdeaDevFest 2026» e «Dev Fest 2026 – Concept &amp; Programma».
+        DevFest è un marchio Google. Evento organizzato dalla community Google Developer Groups.
+      </p>
+    </footer>
+
+
+    <script src="main.js"></script>
+  </body>
+</html>

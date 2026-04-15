@@ -1,0 +1,3 @@
+# Blocca l'indicizzazione dell'intero sito
+User-agent: *
+Disallow: /
