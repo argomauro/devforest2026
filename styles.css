@@ -962,6 +962,43 @@ img {
   }
 }
 
+/* ── Event date ──────────────────────────────────────────────── */
+.event-date {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin: 0 0 1.25rem;
+  font-size: clamp(0.95rem, 1.8vw, 1.1rem);
+  font-weight: 600;
+  color: var(--text);
+}
+
+.event-date time {
+  background: linear-gradient(90deg, var(--accent), #a3f0c8);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  filter: drop-shadow(0 0 10px var(--accent-glow));
+}
+
+.event-date-sep {
+  color: var(--text-muted);
+}
+
+.reg-date-badge {
+  display: inline-block;
+  margin: 0 auto 1rem;
+  padding: 0.35rem 1rem;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  background: rgba(63, 191, 117, 0.12);
+  border: 1px solid rgba(63, 191, 117, 0.4);
+  color: var(--accent);
+  text-align: center;
+}
+
 /* ── DevForest badge ─────────────────────────────────────────── */
 .devforest-badge {
   display: inline-block;
