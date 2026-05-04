@@ -109,14 +109,28 @@
     } catch (err) {}
   }
 
-  var heroSlider = document.getElementById("hero-slider");
-  if (heroSlider) {
-    var slides = heroSlider.querySelectorAll(".hero-slide");
-    var dots = heroSlider.querySelectorAll(".hero-slider-dot");
-    var prevBtn = heroSlider.querySelector("[data-slide-dir='prev']");
-    var nextBtn = heroSlider.querySelector("[data-slide-dir='next']");
+  function initSlider(sliderElement) {
+    var slides = sliderElement.querySelectorAll(".hero-slide");
+    var dotsContainer = sliderElement.querySelector(".hero-slider-dots");
+    var prevBtn = sliderElement.querySelector("[data-slide-dir='prev']");
+    var nextBtn = sliderElement.querySelector("[data-slide-dir='next']");
     var index = 0;
     var timer = null;
+    var dots = sliderElement.querySelectorAll(".hero-slider-dot");
+
+    if (dotsContainer && dots.length !== slides.length) {
+      dotsContainer.innerHTML = "";
+      slides.forEach(function (_, dotIndex) {
+        var dot = document.createElement("button");
+        dot.type = "button";
+        dot.className = "hero-slider-dot";
+        dot.setAttribute("data-slide-to", String(dotIndex));
+        dot.setAttribute("aria-label", "Vai alla slide " + (dotIndex + 1));
+        if (dotIndex === 0) dot.classList.add("is-active");
+        dotsContainer.appendChild(dot);
+      });
+      dots = sliderElement.querySelectorAll(".hero-slider-dot");
+    }
 
     function renderSlide(nextIndex) {
       if (!slides.length) return;
@@ -159,7 +173,12 @@
       });
     });
 
-    renderSlide(0);
-    restartAuto();
+    if (slides.length > 1) {
+      renderSlide(0);
+      restartAuto();
+    }
   }
+
+  var heroSlider = document.getElementById("hero-slider");
+  if (heroSlider) initSlider(heroSlider);
 })();
